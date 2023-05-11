@@ -5,8 +5,8 @@
 # A = 2; B = 3 -> 8 
 A = int(input("Введите первое число: "))
 B = int(input("Введите второе число: "))
-def sumNumbers(A, B):
+def exponentiation(A, B):
     if B == 0:
         return 1
-    return A * sumNumbers(A,B-1)
-print(sumNumbers(A, B))
+    return A * exponentiation(A,B-1)
+print(exponentiation(A, B))
