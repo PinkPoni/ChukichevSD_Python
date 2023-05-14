@@ -7,9 +7,9 @@
 # 4 
 a = int(input("Введите первое число (неотрицательное, целое): "))
 b = int(input("Введите второе число (неотрицательное, целое): "))
-if a < b:
-    a, b = b, a
 def sumNumbers(a, b):
+    if a < b:
+        a, b = b, a
     if b == 0:
         return a
     return sumNumbers(a+1,b-1)
