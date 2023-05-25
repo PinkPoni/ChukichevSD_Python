@@ -12,8 +12,8 @@
 # **Вывод:** Парам пам-пам  
 
 text = input("Введите несколько слов (или фраз - слов разделенных дефисами): ")
-# print(list(map(str,text.split())))
-count_vowels = list(map(lambda x: sum(map(x.count,'aeiouаяуюоеёэиы')), list(map(str,text.split()))))
+# print(text.split())
+count_vowels = list(map(lambda x: sum(map(x.count,'aeiouаяуюоеёэиы')), text.split()))
 # print(count_vowels)
 data = [obj for obj in range(len(count_vowels))]
 res = list (map(lambda obj: count_vowels[obj] == count_vowels[0], data))
